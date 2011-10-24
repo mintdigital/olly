@@ -21,7 +21,7 @@ int ledPin = 13;
 void setup() {
 
   // Set up rss feed (Example below is for a search.)
-  url = "http://search.twitter.com/search.atom?q=mintdigital";
+  url = "http://search.twitter.com/search.rss?q=mintdigital";
   
   // Set up Arduino
   arduino = new Arduino(this, Arduino.list()[1], 57600);
