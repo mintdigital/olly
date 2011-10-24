@@ -20,8 +20,8 @@ int ledPin = 13;
 
 void setup() {
 
-  // Set up rss feed (this is the public twitter timeline)
-  url = "http://api.twitter.com/1/statuses/public_timeline.rss";
+  // Set up rss feed (Example below is for a search.)
+  url = "http://search.twitter.com/search.atom?q=mintdigital";
   
   // Set up Arduino
   arduino = new Arduino(this, Arduino.list()[1], 57600);
