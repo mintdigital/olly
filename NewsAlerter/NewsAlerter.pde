@@ -54,6 +54,6 @@ void draw() {
       arduino.digitalWrite(ledPin, Arduino.LOW);
     }
 
-    // Slow everything down so you don't exceed twitter's rate limits. Check every 10 secs.
+    //Check every 10 secs.
     delay(10000);
 };
