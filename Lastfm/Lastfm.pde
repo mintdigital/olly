@@ -51,6 +51,6 @@ void draw() {
     }
 
     // Slow everything down so you don't exceed twitter's rate limits. Check every 10 secs.
-    delay(10000);
+    delay(1000);
 };
 
