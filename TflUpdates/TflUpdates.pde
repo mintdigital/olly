@@ -1,5 +1,5 @@
 // ************************************************************************************************************************************************************************
-// Triggers an arduino event when we get a new rss item
+// Triggers an arduino event when the tfl status is anything but good service
 // ************************************************************************************************************************************************************************
 
 // Imports
@@ -19,7 +19,7 @@ int ledPin = 13;
 
 void setup() {
 
-  // Set up rss feed (this is the public twitter timeline)
+  // RSS feed of tfl status
   url = "http://tubeupdates.com/rss/all.xml";
   
   // Set up Arduino
@@ -47,6 +47,6 @@ void draw() {
       println("Good Service");
     }
 
-    // Slow everything down so you don't exceed twitter's rate limits. Check every 10 secs.
+    // Check every 10 secs.
     delay(10000);
 };

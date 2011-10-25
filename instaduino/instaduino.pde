@@ -1,4 +1,6 @@
+//  ************************************************************************************************************************************************************************
 // Make a smell every time somone follows Snoop on Instagram
+//  ************************************************************************************************************************************************************************
 
 // IMPORTS
 import org.json.*;
@@ -42,17 +44,13 @@ void draw(){
 int getFollowerCount(){
   String request = baseUrl + clientID;
   String result = join( loadStrings( request ), "");
-  //println (result);
   int followers = 0;
   
   try {
     JSONObject instagramData = new JSONObject(join(loadStrings(request), ""));
     JSONObject data = instagramData.getJSONObject("data");
-    //println (results);
     JSONObject counts = data.getJSONObject("counts");
-    //println (counts);
     followers = counts.getInt("followed_by");
-    //println (followers);
   } 
   catch (JSONException e) {
     println ("There was an error parsing the JSONObject.");

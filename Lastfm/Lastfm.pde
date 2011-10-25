@@ -1,5 +1,6 @@
 //  ************************************************************************************************************************************************************************
 // Triggers an arduino event when we start playing a new band on the Mint stereo
+// Update line 25 with your own lastfm rss feed url
 //  ************************************************************************************************************************************************************************
 
 // Imports
@@ -50,7 +51,7 @@ void draw() {
       arduino.digitalWrite(ledPin, Arduino.LOW);
     }
 
-    // Slow everything down so you don't exceed twitter's rate limits. Check every 10 secs.
+    // Check every 10 secs.
     delay(1000);
 };
 

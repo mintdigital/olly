@@ -1,3 +1,7 @@
+//  ************************************************************************************************************************************************************************
+// Simple test program allowing you to release smells at the press of a button
+//  ************************************************************************************************************************************************************************
+
 import cc.arduino.*;
 import processing.serial.*;
 
@@ -10,7 +14,6 @@ PFont f;
 
 void setup() {  
   // Set up Arduino
-//  Arduino.list(); //Uncomment to get list of serial devices attached, update [x]. Remember to setup arduino pins as inputor output here.
   arduino = new Arduino(this, Arduino.list()[1], 57600);
   arduino.pinMode(ledPin, Arduino.OUTPUT);
 

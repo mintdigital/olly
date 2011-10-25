@@ -1,5 +1,6 @@
 //  ************************************************************************************************************************************************************************
 // Triggers an arduino event when we get a new rss item
+// Edit line 25 with the url of your rss feed
 //  ************************************************************************************************************************************************************************
 
 // Imports
@@ -20,7 +21,7 @@ int ledPin = 13;
 
 void setup() {
 
-  // Set up rss feed (Example below is for a search.)
+  // Set up rss feed (Example below is for a twitter search on mintdigital.)
   url = "http://search.twitter.com/search.rss?q=mintdigital";
   
   // Set up Arduino
