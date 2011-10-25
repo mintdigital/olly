@@ -25,8 +25,8 @@ void setup() {
   // Set up rss feed (this is the public twitter timeline)
   url = "http://feeds.bbci.co.uk/news/rss.xml";
   
-  // Set up what news we're interested in
-  interestedIn = ".*Cameron.*";
+  // Set up what news we're interested in, use | to add multiple terms
+  interestedIn = ".*Tottenham|Liverpool.*";
   
   // Set up Arduino
   arduino = new Arduino(this, Arduino.list()[1], 57600);
