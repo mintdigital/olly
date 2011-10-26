@@ -24,7 +24,9 @@ void setup() {
   rectY = 75;
   rectWidth = 100;
   rectHeight = 50;
-  f = loadFont("SansSerif-24.vlw");
+  String[] fontList = PFont.list();
+  println(fontList);
+  f = createFont("Verdana", 24);
   textFont(f);
 }
 
@@ -44,9 +46,9 @@ void draw(){
 void mousePressed()
 {
   if(overButton(rectX, rectY, rectWidth, rectHeight)) {
-    arduino.digitalWrite(ledPin, Arduino.HIGH);
-    delay(100);
-    arduino.digitalWrite(ledPin, Arduino.LOW);
+//    arduino.digitalWrite(ledPin, Arduino.HIGH);
+//    delay(100);
+//    arduino.digitalWrite(ledPin, Arduino.LOW);
     println("Button pressed");
   }
 }
